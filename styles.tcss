@@ -1,0 +1,16 @@
+Screen {
+    background: $background;
+}
+Header { dock: top; background: $primary; color: $text; }
+Footer { dock: bottom; background: $surface; }
+DataTable { background: $surface; }
+DataTable > .datatable--header { background: $primary; color: $text; text-style: bold; }
+DataTable > .datatable--cursor { background: $accent 30%; }
+Input { background: $surface; border: tall $primary; }
+Input:focus { border: tall $accent; }
+TextArea { background: $surface; border: tall $primary; }
+TextArea:focus { border: tall $accent; }
+Button { background: $primary; color: $text; }
+Button:hover { background: $accent; }
+#status-bar { background: $surface; color: $text-muted; }
+#help-bar { background: $surface; color: $text-muted; }

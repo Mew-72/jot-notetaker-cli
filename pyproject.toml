@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["jot", "tui"]
+
+[project]
+name = "jot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.4.1",
+    "pydantic>=2.13.4",
+    "rich>=15.0.0",
+    "textual>=1.0.0",
+]
+
+[project.scripts]
+jot = "jot:main"
